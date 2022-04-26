@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  /* background-color: #d5d4d8; */
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 0 50px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+
+.socialIcons {
+  width: 30px;
+}
+
+/* .socialIcons:hover,
+.socialIcons:focus {
+  background-color: #000000;
+  background-image: src="Github-logo-white.png"
+  ;
+} */
+[data-theme="light"] {
+  --bg-color: #d5d4d8;
+  --text-color: #000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #3f3f3f !important;
+  --text-color: #fff !important;
+}
