@@ -5,16 +5,15 @@
   justify-content: center;
   text-align: left;
   width: 300px;
-  margin: 0 50px;
   padding: 0 25px 23px 25px;
 }
 
 .header {
   display: flex;
   justify-content: center;
-  margin: 0;
+  /* margin: 0; */
   font-size: 20px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
 }
 
 .texts {

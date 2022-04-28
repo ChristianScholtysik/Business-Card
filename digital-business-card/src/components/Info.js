@@ -13,7 +13,9 @@ export default function Info(theme) {
       </header>
       <div className={styles.bio}>
         <h1 className={styles.name}>Jane Doe</h1>
-        <p className="title">Fullstack Frontend Developer</p>
+        <p className="title" id="title-dark">
+          Fullstack Frontend Developer
+        </p>
         <p className={styles.small}>JaneDoe.com</p>
         <div className={styles.contacts}>
           <a

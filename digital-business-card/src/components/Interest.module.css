@@ -1,11 +1,9 @@
 .interest {
   display: flex;
-  /* background-color: #f5f5f5; */
   flex-direction: column;
   justify-content: center;
   text-align: left;
   width: 300px;
-  margin: 0 50px;
   padding: 0 25px 28px 25px;
 }
 

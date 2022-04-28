@@ -1,10 +1,11 @@
 .footer {
   display: flex;
-  /* background-color: #d5d4d8; */
-  justify-content: center;
+  justify-content: space-evenly;
+  background-color: rgba(red, rgb(81, 119, 81), blue, 0.7);
+
   align-items: center;
   width: 300px;
-  margin: 0 50px;
+  padding: 10px 0;
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
 }

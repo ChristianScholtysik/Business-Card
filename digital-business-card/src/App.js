@@ -4,6 +4,9 @@ import Info from "./components/Info";
 import About from "./components/About";
 import Interest from "./components/Interest";
 import Footer from "./components/Footer";
+import { MoonFill } from "react-bootstrap-icons";
+import { SunFill } from "react-bootstrap-icons";
+
 //import Button from "./components/Button";
 // import "./index.css";
 
@@ -24,8 +27,9 @@ export default function App() {
           <Info />
           {/* <Button /> */}
           <div className="SwitchButton">
-            <button onClick={toggleDarkMode}>
-              {darkMode ? "Light Mode" : "Dark Mode"}
+            <button onClick={toggleDarkMode} className="bt2">
+              Light-Mode
+              {darkMode ? <SunFill /> : <MoonFill />}
             </button>
           </div>
           <About theme={darkMode} />
@@ -37,8 +41,9 @@ export default function App() {
           <Info />
           {/* <Button /> */}
           <div className="SwitchButton">
-            <button onClick={toggleDarkMode}>
-              {darkMode ? "Light Mode" : "Dark Mode"}
+            <button onClick={toggleDarkMode} className="bt">
+              Dark-Mode
+              {darkMode ? <SunFill /> : <MoonFill />}
             </button>
           </div>
           <About />
