@@ -5,7 +5,7 @@ import About from "./components/About";
 import Interest from "./components/Interest";
 import Footer from "./components/Footer";
 //import Button from "./components/Button";
-import "./index.css";
+// import "./index.css";
 
 export default function App() {
   const storedDarkMode = localStorage.getItem("DARK_MODE");
@@ -18,15 +18,45 @@ export default function App() {
   }, [darkMode]);
 
   return (
-    <div className="App" data-theme={darkMode ? "dark" : "light"}>
-      <Info />
-      {/* <Button /> */}
-      <button className="Button" onClick={toggleDarkMode}>
-        {darkMode ? "Light Mode" : "Dark Mode"}
-      </button>
-      <About />
-      <Interest />
-      <Footer />
-    </div>
+    <>
+      {darkMode ? (
+        <div className="App dark">
+          <Info />
+          {/* <Button /> */}
+          <div className="SwitchButton">
+            <button onClick={toggleDarkMode}>
+              {darkMode ? "Light Mode" : "Dark Mode"}
+            </button>
+          </div>
+          <About theme={darkMode} />
+          <Interest theme={darkMode} />
+          <Footer theme={darkMode} />
+        </div>
+      ) : (
+        <div className="App light">
+          <Info />
+          {/* <Button /> */}
+          <div className="SwitchButton">
+            <button onClick={toggleDarkMode}>
+              {darkMode ? "Light Mode" : "Dark Mode"}
+            </button>
+          </div>
+          <About />
+          <Interest />
+          <Footer />
+        </div>
+      )}
+    </>
+
+    // {/* If darkMode truthy then add .dark to the div */}
+
+    // <Info />
+    // {/* <Button /> */}
+    // <button className="Button" onClick={toggleDarkMode}>
+    //   {darkMode ? "Light Mode" : "Dark Mode"}
+    // </button>
+    // <About />
+    // <Interest />
+    // <Footer />
   );
 }

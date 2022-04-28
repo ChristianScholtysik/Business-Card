@@ -2,7 +2,9 @@ import React from "react";
 import styles from "./About.module.css";
 import "../index.css";
 
-export default function About() {
+export default function About({ theme }) {
+  console.log(theme);
+  //Logik wie in App.js -> zeige diese className wenn theme true, andernfalls zeige die andere className
   return (
     <main className={styles.about}>
       <h2 className={styles.header}>About</h2>

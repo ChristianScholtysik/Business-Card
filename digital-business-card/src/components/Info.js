@@ -5,7 +5,7 @@ import emailLogo from "../img/Email-logo.png";
 import linkendinLogo from "../img/LinkedIn-logo.png";
 import "../index.css";
 
-export default function Info() {
+export default function Info(theme) {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -13,7 +13,7 @@ export default function Info() {
       </header>
       <div className={styles.bio}>
         <h1 className={styles.name}>Jane Doe</h1>
-        <p className={styles.title}>Fullstack Frontend Developer</p>
+        <p className="title">Fullstack Frontend Developer</p>
         <p className={styles.small}>JaneDoe.com</p>
         <div className={styles.contacts}>
           <a

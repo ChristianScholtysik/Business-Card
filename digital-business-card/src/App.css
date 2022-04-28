@@ -1,9 +1,56 @@
-[data-theme="light"] {
-  --bg-color: #d5d4d8;
+/* [data-theme="light"] {
+  --bg-color: rgb(201, 35, 145);
   --text-color: #000;
+} */
+
+/* [data-theme="dark"] {
+  --bg-color: #3f3f3f;
+  --text-color: #f5f5f5;
+/* } 
+:root.dark {
+  --titledark: #cc2299;
+}
+*/
+:root {
+  --title: #297fe5;
+  --titledark: #cc2299;
 }
 
-[data-theme="dark"] {
-  --bg-color: #3f3f3f !important;
-  --text-color: #fff !important;
+@media (prefers-color-scheme: dark) {
+  .title {
+    color: var(--titledark);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .title {
+    color: var(--title);
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: rgb(201, 35, 145);
+  color: #000; */
+  /* background-color: #f5f5f5; */
+}
+
+.dark {
+  background-color: #3f3f3f;
+  color: #f5f5f5;
+}
+
+.light {
+  background-color: #f5f5f5;
+  color: #000;
 }

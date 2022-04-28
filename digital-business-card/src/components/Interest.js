@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Interest.module.css";
 import "../index.css";
 
-export default function Interest() {
+export default function Interest(theme) {
   return (
     <main className={styles.interest}>
       <h2 className={styles.header}>Interests</h2>

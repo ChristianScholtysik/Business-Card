@@ -7,8 +7,9 @@ import reactLogo from "../img/React-logo.png";
 import instaLogo from "../img/Insta-logo.png";
 import "../index.css";
 
-export default function Footer() {
+export default function Footer(theme) {
   const [IsHovered, setIsHovered] = useState(false);
+
   return (
     <footer className={styles.footer}>
       <div
