@@ -28,15 +28,6 @@ body {
   border-bottom-left-radius: 25px; */
 }
 
-/* .Button {
-  justify-content: center;
-  margin: 20px 75px;
-  padding: 5px;
-  border-radius: 12px;
-  width: 250px;
-  /* background-color: #f5f5f5; 
-} */
-
 .SwitchButton {
   display: flex;
   justify-content: center;

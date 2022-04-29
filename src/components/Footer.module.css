@@ -21,6 +21,18 @@
   background-color: #f5f5f5;
 }
 
+a {
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+
+  color: #050505;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 /*.footer {
   background-color: #f5f5f5;
 }
